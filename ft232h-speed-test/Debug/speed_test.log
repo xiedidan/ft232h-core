@@ -1,0 +1,3 @@
+﻿  main.cpp
+main.obj : warning LNK4075: ignoring '/EDITANDCONTINUE' due to '/OPT:LBR' specification
+  speed_test.vcxproj -> G:\project\ft232h_test\ft2232hcore_latest\.\Debug\speed_test.exe
