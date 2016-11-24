@@ -1,0 +1,1 @@
+Copy usb_ft2232_hw.tcl  and usb_ft2232.vhd to your project directory and start SOPC Builder!
