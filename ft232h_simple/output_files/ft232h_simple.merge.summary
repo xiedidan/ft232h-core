@@ -1,0 +1,17 @@
+Partition Merge Status : Successful - Fri Nov 25 23:30:23 2016
+Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+Revision Name : ft232h_simple
+Top-level Entity Name : ft232h_simple
+Family : Cyclone V
+Logic utilization (in ALMs) : 6 / 9,430 ( < 1 % )
+Total registers : 19
+Total pins : 16 / 224 ( 7 % )
+Total virtual pins : 0
+Total block memory bits : 0 / 1,802,240 ( 0 % )
+Total DSP Blocks : 0 / 25 ( 0 % )
+Total HSSI RX PCSs : 0
+Total HSSI PMA RX Deserializers : 0
+Total HSSI TX PCSs : 0
+Total HSSI PMA TX Serializers : 0
+Total PLLs : 0 / 4 ( 0 % )
+Total DLLs : 0 / 4 ( 0 % )

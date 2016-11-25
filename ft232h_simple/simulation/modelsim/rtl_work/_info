@@ -1,0 +1,128 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 dG:/project/ft232h_simple/simulation/modelsim
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+vft232h_simple
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+r1
+31
+IIoGR=:IYV2GO=mS7XgXWA2
+Z2 dG:/project/ft232h_simple/simulation/modelsim
+w1461150298
+8G:/project/ft232h_simple/ft232h_simple.v
+FG:/project/ft232h_simple/ft232h_simple.v
+L0 1
+Z3 OE;L;10.2c;57
+Z4 o-vlog01compat -work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 lbk8l7Pgz]JS>^Yfkic3d1
+!s108 1461244345.384000
+!s107 G:/project/ft232h_simple/ft232h_simple.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/project/ft232h_simple|G:/project/ft232h_simple/ft232h_simple.v|
+!s92 -vlog01compat -work work +incdir+G:/project/ft232h_simple -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!i10b 1
+!i111 0
+vft232h_simple_tb
+R1
+r1
+31
+ILoHc;lZVH>34d1d9bCA6>3
+R2
+w1461204962
+8G:/project/ft232h_simple/simulation/modelsim/ft232h_simple_tb.v
+FG:/project/ft232h_simple/simulation/modelsim/ft232h_simple_tb.v
+L0 3
+R3
+o-work work -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 Z^B<V=hc7;gClOlVPSaaA2
+!s108 1461245588.591000
+!s107 G:/project/ft232h_simple/simulation/modelsim/ft232h_simple_tb.v|
+!s90 -reportprogress|300|-work|work|G:/project/ft232h_simple/simulation/modelsim/ft232h_simple_tb.v|
+!s85 0
+!i10b 1
+!i111 0
+vft232h_sync
+R1
+r1
+!s85 0
+31
+IkSmo7@cL;hHA7XQmR9DLe2
+R2
+w1461245132
+8G:/project/ft232h_simple/ft232h_sync/ft232h_sync.v
+FG:/project/ft232h_simple/ft232h_sync/ft232h_sync.v
+L0 3
+R3
+R4
+Z5 !s92 -vlog01compat -work work +incdir+G:/project/ft232h_simple/ft232h_sync -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!i10b 1
+!s100 d?22W7V`63B>I;kP6N22i2
+!s108 1461245636.155000
+!s107 G:/project/ft232h_simple/ft232h_sync/ft232h_sync.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/project/ft232h_simple/ft232h_sync|-L|mtiAvm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|G:/project/ft232h_simple/ft232h_sync/ft232h_sync.v|
+!i111 0
+vincr_data
+R1
+r1
+31
+I^=4QBC>_G0DAjnemA2Ua92
+R2
+w1461149890
+8G:/project/ft232h_simple/incr_data/incr_data.v
+FG:/project/ft232h_simple/incr_data/incr_data.v
+L0 3
+R3
+R4
+!s100 bJQjkhj6iKKLJW5;kGeh63
+!s108 1461244343.711000
+!s107 G:/project/ft232h_simple/incr_data/incr_data.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/project/ft232h_simple/incr_data|G:/project/ft232h_simple/incr_data/incr_data.v|
+!s92 -vlog01compat -work work +incdir+G:/project/ft232h_simple/incr_data -L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s85 0
+!i10b 1
+!i111 0
+vpll
+R1
+r1
+31
+IiA9IC0Oba=TMW^LzLOI[?3
+R2
+w1461069876
+8G:/project/ft232h_simple/pll_sim/pll.vo
+FG:/project/ft232h_simple/pll_sim/pll.vo
+L0 32
+R3
+o-L mtiAvm -L mtiOvm -L mtiUvm -L mtiUPF
+!s100 ;]PcFCd?PGSDFU2GGh=;M2
+!s108 1461244343.577000
+!s107 G:/project/ft232h_simple/pll_sim/pll.vo|
+!s90 -reportprogress|300|G:/project/ft232h_simple/pll_sim/pll.vo|
+!s85 0
+!i10b 1
+!i111 0
+vtx_fifo
+R1
+r1
+31
+IF^0<=?PM@88lTWBa;^1=?3
+R2
+w1461083614
+8G:/project/ft232h_simple/ft232h_sync/tx_fifo.v
+FG:/project/ft232h_simple/ft232h_sync/tx_fifo.v
+L0 40
+R3
+R4
+R5
+!s100 I0oW;ThXZk@8iECROIOUo0
+!s108 1461244344.013000
+!s107 G:/project/ft232h_simple/ft232h_sync/tx_fifo.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/project/ft232h_simple/ft232h_sync|G:/project/ft232h_simple/ft232h_sync/tx_fifo.v|
+!s85 0
+!i10b 1
+!i111 0

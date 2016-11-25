@@ -9,7 +9,7 @@
 #pragma comment(lib, "ftd2xx.lib")
 
 // #define DEBUG_READ_COUNTER 1
-// #define DEBUG_ERROR_DETAIL 1
+#define DEBUG_ERROR_DETAIL 1
 // #define DEBUG_BUFFER 1
 
 #define FT_OPENEX 1
@@ -66,8 +66,8 @@ int main(void)
 	    	
 		    	sequence++;
 
-      	      if (!initialised)
-            	{
+      	    if (!initialised)
+            {
 				sequence = c;
 				initialised = true;
 			}

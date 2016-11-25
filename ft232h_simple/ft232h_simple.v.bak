@@ -1,0 +1,36 @@
+module ft232_simple(clk,
+	pll_lock,
+	rst_n,
+	rd_n,
+	wr_n,
+	oe_n,
+	rxf_n,
+	txe_n,
+	siwu_n,
+	data,
+	clock);
+input clk;
+output pll_lock;
+input rst_n;
+
+output rd_n;
+output wr_n;
+output oe_n;
+output siwu_n;
+
+input rxf_n;
+input txe_n;
+input clock;
+
+inout [7:0] data;
+
+wire rst;
+wire pll_lock_export;
+
+assign rst = ~rst_n;
+assign pll_lock = ~pll_lock_export;
+	
+
+
+	
+endmodule

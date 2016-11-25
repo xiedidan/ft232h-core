@@ -1,0 +1,39 @@
+|ft232h_simple
+rst_n => dataReg[0].ACLR
+rst_n => dataReg[1].ACLR
+rst_n => dataReg[2].ACLR
+rst_n => dataReg[3].ACLR
+rst_n => dataReg[4].ACLR
+rst_n => dataReg[5].ACLR
+rst_n => dataReg[6].ACLR
+rst_n => dataReg[7].ACLR
+rst_n => wr_nReg.PRESET
+rst_n => last_txe_n.PRESET
+rd_n <= <VCC>
+wr_n <= wr_nReg.DB_MAX_OUTPUT_PORT_TYPE
+oe_n <= <GND>
+rxf_n => ~NO_FANOUT~
+txe_n => last_txe_n.DATAIN
+txe_n => wr_nReg.DATAIN
+txe_n => always1.IN1
+siwu_n <= <VCC>
+data[0] <> data[0]
+data[1] <> data[1]
+data[2] <> data[2]
+data[3] <> data[3]
+data[4] <> data[4]
+data[5] <> data[5]
+data[6] <> data[6]
+data[7] <> data[7]
+clock => wr_nReg.CLK
+clock => dataReg[0].CLK
+clock => dataReg[1].CLK
+clock => dataReg[2].CLK
+clock => dataReg[3].CLK
+clock => dataReg[4].CLK
+clock => dataReg[5].CLK
+clock => dataReg[6].CLK
+clock => dataReg[7].CLK
+clock => last_txe_n.CLK
+
+

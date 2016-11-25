@@ -1,0 +1,97 @@
+Assembler report for ft232h_simple
+Fri Nov 25 23:31:01 2016
+Quartus Prime Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: H:/project/ft232h_simple/output_files/ft232h_simple.sof
+  6. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Fri Nov 25 23:31:01 2016 ;
+; Revision Name         ; ft232h_simple                         ;
+; Top-level Entity Name ; ft232h_simple                         ;
+; Family                ; Cyclone V                             ;
+; Device                ; 5CEFA2F23C8                           ;
++-----------------------+---------------------------------------+
+
+
++----------------------------------+
+; Assembler Settings               ;
++--------+---------+---------------+
+; Option ; Setting ; Default Value ;
++--------+---------+---------------+
+
+
++---------------------------------------------------------+
+; Assembler Generated Files                               ;
++---------------------------------------------------------+
+; File Name                                               ;
++---------------------------------------------------------+
+; H:/project/ft232h_simple/output_files/ft232h_simple.sof ;
++---------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------+
+; Assembler Device Options: H:/project/ft232h_simple/output_files/ft232h_simple.sof ;
++----------------+------------------------------------------------------------------+
+; Option         ; Setting                                                          ;
++----------------+------------------------------------------------------------------+
+; Device         ; 5CEFA2F23C8                                                      ;
+; JTAG usercode  ; 0x004E046B                                                       ;
+; Checksum       ; 0x004E046B                                                       ;
++----------------+------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Assembler
+    Info: Version 15.1.0 Build 185 10/21/2015 SJ Standard Edition
+    Info: Processing started: Fri Nov 25 23:30:55 2016
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off ft232h_simple -c ft232h_simple
+Warning (125092): Tcl Script File ft232h_sync/tx_fifo.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE ft232h_sync/tx_fifo.qip
+Warning (125092): Tcl Script File pll.qip not found
+    Info (125063): set_global_assignment -name QIP_FILE pll.qip
+Warning (125092): Tcl Script File pll.sip not found
+    Info (125063): set_global_assignment -name SIP_FILE pll.sip
+Info (115030): Assembler is generating device programming files
+Info: Quartus Prime Assembler was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 866 megabytes
+    Info: Processing ended: Fri Nov 25 23:31:02 2016
+    Info: Elapsed time: 00:00:07
+    Info: Total CPU time (on all processors): 00:00:06
+
+

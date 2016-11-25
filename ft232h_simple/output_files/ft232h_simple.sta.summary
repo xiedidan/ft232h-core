@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'usb_clk'
+Slack : -8.251
+TNS   : -73.015
+
+Type  : Slow 1100mV 85C Model Hold 'usb_clk'
+Slack : 0.494
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'usb_clk'
+Slack : 5.244
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'usb_clk'
+Slack : -7.986
+TNS   : -71.176
+
+Type  : Slow 1100mV 0C Model Hold 'usb_clk'
+Slack : 0.520
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'usb_clk'
+Slack : 5.310
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'usb_clk'
+Slack : -1.159
+TNS   : -9.759
+
+Type  : Fast 1100mV 85C Model Hold 'usb_clk'
+Slack : 0.191
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'usb_clk'
+Slack : 5.187
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'usb_clk'
+Slack : -0.836
+TNS   : -7.090
+
+Type  : Fast 1100mV 0C Model Hold 'usb_clk'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'usb_clk'
+Slack : 5.156
+TNS   : 0.000
+
+------------------------------------------------------------
