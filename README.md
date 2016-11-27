@@ -5,7 +5,7 @@ I created this project to:
   2. proof of FT232H in sync mode.  
   
 # Reason  
-I found some open source FT232H sync mode IPs (from opencore, blogs, etc..), but they all seem to lose 1 byte data every 512 bytes on my BeMicro CV + UM232H system.  
+I found some open source FT232H sync mode IPs (from opencore, blogs, etc.. you could find these in ip-core dir in this project), but they all seem to lose 1 byte data every 512 bytes on my BeMicro CV + UM232H system.  
 After some researching I found that the real timing for FT232H is different from the timing in its datasheet.  
 So here's this little project to figure out the real timing for FT232H.  
 
