@@ -40,15 +40,15 @@
 					"strict" : false
 				},
 				{
+					"name" : "rst_n",
+					"strict" : false
+				},
+				{
 					"name" : "txe_n",
 					"strict" : false
 				},
 				{
 					"name" : "clock",
-					"strict" : false
-				},
-				{
-					"name" : "rst_n",
 					"strict" : false
 				}
 			]

@@ -18,7 +18,7 @@ module ft232h(rst_n, clk,
 	output oe_n, rd_n, wr_n, siwu;
 	input rxf_n, txe_n;
 	
-	reg wr_n;
+	// reg wr_n;
 	
 	parameter READ_DATA = 8'b0;
 	parameter WRITE_DATA = 8'b1;
@@ -63,13 +63,7 @@ module ft232h(rst_n, clk,
 	// write fifo logic
 	assign write_wrreq = avalon_write & (avalon_address == WRITE_DATA) & (~write_wrfull);
 		
-	always @(negedge rst_n or posedge clock)
-	if (~rst_n)
-		wr_n <= 1'b1;
-	else if (~txe_n & ~write_rdempty)
-		wr_n <= 1'b0;
-	else
-		wr_n <= 1'b1;
+	assign wr_n = (~rst_n) | txe_n | write_rdempty;
 	
 	// use combinational logic to deassert rdreq ASAP when txe_n deasserts
 	// last_txe_n is synced to clock so there's still 1 clock delay for rdreq when txe_n asserts

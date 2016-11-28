@@ -1,16 +1,16 @@
-Fitter Status : Successful - Sun Nov 27 23:08:40 2016
+Fitter Status : Successful - Mon Nov 28 19:48:31 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 Revision Name : ft232h_fifo
 Top-level Entity Name : ft232h_fifo
 Family : Cyclone V
 Device : 5CEFA2F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 63 / 9,430 ( < 1 % )
-Total registers : 154
+Logic utilization (in ALMs) : 52 / 9,430 ( < 1 % )
+Total registers : 130
 Total pins : 17 / 224 ( 8 % )
 Total virtual pins : 0
-Total block memory bits : 65,536 / 1,802,240 ( 4 % )
-Total RAM Blocks : 8 / 176 ( 5 % )
+Total block memory bits : 16,384 / 1,802,240 ( < 1 % )
+Total RAM Blocks : 2 / 176 ( 1 % )
 Total DSP Blocks : 0 / 25 ( 0 % )
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Nov 27 23:08:01 2016
+Analysis & Synthesis Status : Successful - Mon Nov 28 19:47:53 2016
 Quartus Prime Version : 15.1.0 Build 185 10/21/2015 SJ Standard Edition
 Revision Name : ft232h_fifo
 Top-level Entity Name : ft232h_fifo
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 144
+Total registers : 123
 Total pins : 17
 Total virtual pins : 0
-Total block memory bits : 65,536
+Total block memory bits : 16,384
 Total DSP Blocks : 0
 Total HSSI RX PCSs : 0
 Total HSSI PMA RX Deserializers : 0
