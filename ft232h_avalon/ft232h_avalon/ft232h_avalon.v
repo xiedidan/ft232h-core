@@ -1,4 +1,4 @@
-module ft232h(rst_n, clk, tx_almost_empty, rx_almost_full,
+module ft232h_avalon(rst_n, clk, tx_almost_empty, rx_almost_full,
 	avalon_address, avalon_read, avalon_readdata, avalon_waitrequest, avalon_write, avalon_writedata,
 	clock, data, oe_n, rd_n, rxf_n, siwu, txe_n, wr_n);
 
@@ -66,8 +66,8 @@ module ft232h(rst_n, clk, tx_almost_empty, rx_almost_full,
 	if (~rst_n)
 		last_txe_n <= 1'b1;
 	else
-		last_txe_n <= txe_n;	
-	
+		last_txe_n <= txe_n;
+
 	// tx IRQ logic
 	always @(negedge rst_n or posedge clk)
 	if (~rst_n)
@@ -85,23 +85,23 @@ module ft232h(rst_n, clk, tx_almost_empty, rx_almost_full,
 			end
 	else // irq turned off
 		tx_almost_empty <= 1'b0;
-		
+
 	// write regs
 	always @(negedge rst_n or posedge clk)
 	if (~rst_n)
-		begin	
+		begin
 		rx_fifo_threshold <= 10'b1000000000; // 512
 		tx_fifo_threshold <= 10'b1000000000; // 512
 		clear_irq <= 8'b0;
 		control <= 8'b0;
 		end
-	else if (avalon_write)	
+	else if (avalon_write)
 		if (avalon_address == RX_ALMOST_FULL_THRESHOLD)
 			rx_fifo_threshold <= avalon_writedata[9:0];
 		else if (avalon_address == TX_ALMOST_EMPTY_THRESHOLD)
 			tx_fifo_threshold <= avalon_writedata[9:0];
 		else if (avalon_address == CONTROL)
-			control <= avalon_writedata[1:0];		
+			control <= avalon_writedata[1:0];
 
 	// read regs
 	always @(negedge rst_n or posedge clk)
@@ -114,7 +114,7 @@ module ft232h(rst_n, clk, tx_almost_empty, rx_almost_full,
 		else if (avalon_address == RX_FIFO_COUNTER)
 			avalon_readdata <= {22'b0, read_rdusedw};
 		*/
-		
+
 	assign avalon_waitrequest = (~rst_n) |
 		(avalon_write & (avalon_address == WRITE_DATA) & write_wrfull); // |
 		// (avalon_read & (avalon_address == READ_DATA) & read_rdempty);

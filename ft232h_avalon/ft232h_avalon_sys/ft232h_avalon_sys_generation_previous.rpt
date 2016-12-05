@@ -1,0 +1,247 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate D:\project\ft232h-core\ft232h_avalon\ft232h_avalon_sys.qsys --block-symbol-file --output-directory=D:\project\ft232h-core\ft232h_avalon\ft232h_avalon_sys --family="Cyclone V" --part=5CEFA2F23C8
+Progress: Loading ft232h_avalon/ft232h_avalon_sys.qsys
+Progress: Reading input file
+Progress: Adding cpu [altera_nios2_gen2 15.1]
+Progress: Parameterizing module cpu
+Progress: Adding ddr3 [altera_mem_if_ddr3_emif 15.1]
+Progress: Parameterizing module ddr3
+Progress: Adding ddr3_clk [clock_source 15.1]
+Progress: Parameterizing module ddr3_clk
+Progress: Adding dma [altera_avalon_dma 15.1]
+Progress: Parameterizing module dma
+Progress: Adding dma_ram [altera_avalon_onchip_memory2 15.1]
+Progress: Parameterizing module dma_ram
+Progress: Adding ft232 [ft232_avalon 1.0]
+Progress: Parameterizing module ft232
+Progress: Adding jtag [altera_jtag_avalon_master 15.1]
+Progress: Parameterizing module jtag
+Progress: Adding pll [altera_pll 15.1]
+Progress: Parameterizing module pll
+Progress: Adding ram [altera_avalon_onchip_memory2 15.1]
+Progress: Parameterizing module ram
+Progress: Adding reset [altera_reset_controller 15.1]
+Progress: Parameterizing module reset
+Progress: Adding sys_clk [clock_source 15.1]
+Progress: Parameterizing module sys_clk
+Progress: Adding sysid [altera_avalon_sysid_qsys 15.1]
+Progress: Parameterizing module sysid
+Progress: Adding usb_dma [altera_avalon_dma 15.1]
+Progress: Parameterizing module usb_dma
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ft232h_avalon_sys.ddr3: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: ft232h_avalon_sys.ddr3: 'Quick' simulation modes are NOT timing accurate. Some simulation memory models may issue warnings or errors
+Warning: ft232h_avalon_sys.ddr3.pll_bridge: pll_bridge.pll_sharing cannot be both connected and exported
+Info: ft232h_avalon_sys.pll: The legal reference clock frequency is 5.0 MHz..650.0 MHz
+Info: ft232h_avalon_sys.pll: Able to implement PLL with user settings
+Warning: ft232h_avalon_sys.reset.reset_out: No synchronous edges, but has associated clock
+Info: ft232h_avalon_sys.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ft232h_avalon_sys.sysid: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate D:\project\ft232h-core\ft232h_avalon\ft232h_avalon_sys.qsys --synthesis=VERILOG --output-directory=D:\project\ft232h-core\ft232h_avalon\ft232h_avalon_sys\synthesis --family="Cyclone V" --part=5CEFA2F23C8
+Progress: Loading ft232h_avalon/ft232h_avalon_sys.qsys
+Progress: Reading input file
+Progress: Adding cpu [altera_nios2_gen2 15.1]
+Progress: Parameterizing module cpu
+Progress: Adding ddr3 [altera_mem_if_ddr3_emif 15.1]
+Progress: Parameterizing module ddr3
+Progress: Adding ddr3_clk [clock_source 15.1]
+Progress: Parameterizing module ddr3_clk
+Progress: Adding dma [altera_avalon_dma 15.1]
+Progress: Parameterizing module dma
+Progress: Adding dma_ram [altera_avalon_onchip_memory2 15.1]
+Progress: Parameterizing module dma_ram
+Progress: Adding ft232 [ft232_avalon 1.0]
+Progress: Parameterizing module ft232
+Progress: Adding jtag [altera_jtag_avalon_master 15.1]
+Progress: Parameterizing module jtag
+Progress: Adding pll [altera_pll 15.1]
+Progress: Parameterizing module pll
+Progress: Adding ram [altera_avalon_onchip_memory2 15.1]
+Progress: Parameterizing module ram
+Progress: Adding reset [altera_reset_controller 15.1]
+Progress: Parameterizing module reset
+Progress: Adding sys_clk [clock_source 15.1]
+Progress: Parameterizing module sys_clk
+Progress: Adding sysid [altera_avalon_sysid_qsys 15.1]
+Progress: Parameterizing module sysid
+Progress: Adding usb_dma [altera_avalon_dma 15.1]
+Progress: Parameterizing module usb_dma
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Warning: ft232h_avalon_sys.ddr3: ODT is disabled. Enabling ODT (Mode Register 1) may improve signal integrity
+Warning: ft232h_avalon_sys.ddr3: 'Quick' simulation modes are NOT timing accurate. Some simulation memory models may issue warnings or errors
+Warning: ft232h_avalon_sys.ddr3.pll_bridge: pll_bridge.pll_sharing cannot be both connected and exported
+Info: ft232h_avalon_sys.pll: The legal reference clock frequency is 5.0 MHz..650.0 MHz
+Info: ft232h_avalon_sys.pll: Able to implement PLL with user settings
+Warning: ft232h_avalon_sys.reset.reset_out: No synchronous edges, but has associated clock
+Info: ft232h_avalon_sys.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: ft232h_avalon_sys.sysid: Time stamp will be automatically updated when this component is generated.
+Info: ft232h_avalon_sys: Generating ft232h_avalon_sys "ft232h_avalon_sys" for QUARTUS_SYNTH
+Info: Inserting clock-crossing logic between cmd_demux.src0 and cmd_mux.sink0
+Info: Inserting clock-crossing logic between cmd_demux_001.src0 and cmd_mux.sink1
+Info: Inserting clock-crossing logic between rsp_demux.src0 and rsp_mux.sink0
+Info: Inserting clock-crossing logic between rsp_demux.src1 and rsp_mux_001.sink0
+Info: Interconnect is inserted between master dma.read_master and slave dma_ram.s2 because the master has address signal 18 bit wide, but the slave is 11 bit wide.
+Info: Interconnect is inserted between master dma.read_master and slave dma_ram.s2 because the master has read_n signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master dma.read_master and slave dma_ram.s2 because the master has readdatavalid signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master dma.read_master and slave dma_ram.s2 because the master has waitrequest signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master usb_dma.write_master and slave ft232.avalon because the master has address signal 10 bit wide, but the slave is 8 bit wide.
+Info: Interconnect is inserted between master usb_dma.write_master and slave ft232.avalon because the master has chipselect signal 1 bit wide, but the slave is 0 bit wide.
+Info: Interconnect is inserted between master usb_dma.write_master and slave ft232.avalon because the master has byteenable signal 4 bit wide, but the slave is 0 bit wide.
+Info: cpu: "ft232h_avalon_sys" instantiated altera_nios2_gen2 "cpu"
+Info: ddr3: "ft232h_avalon_sys" instantiated altera_mem_if_ddr3_emif "ddr3"
+Info: dma: softresetEnable = 1
+Info: dma: Starting RTL generation for module 'ft232h_avalon_sys_dma'
+Info: dma:   Generation command is [exec D:/software/altera/15.1/quartus/bin64//perl/bin/perl.exe -I D:/software/altera/15.1/quartus/bin64//perl/lib -I D:/software/altera/15.1/quartus/sopc_builder/bin/europa -I D:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/software/altera/15.1/quartus/sopc_builder/bin -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma -- D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma/generate_rtl.pl --name=ft232h_avalon_sys_dma --dir=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0001_dma_gen/ --quartus_dir=D:/software/altera/15.1/quartus --verilog --config=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0001_dma_gen//ft232h_avalon_sys_dma_component_configuration.pl  --do_build_sim=0  ]
+Info: dma: # 2016.12.05 22:22:19 (*)   ft232h_avalon_sys_dma: allowing these transactions: word, hw, byte_access
+Info: dma: Done RTL generation for module 'ft232h_avalon_sys_dma'
+Info: dma: "ft232h_avalon_sys" instantiated altera_avalon_dma "dma"
+Info: dma_ram: Starting RTL generation for module 'ft232h_avalon_sys_dma_ram'
+Info: dma_ram:   Generation command is [exec D:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I D:/software/altera/15.1/quartus/bin64/perl/lib -I D:/software/altera/15.1/quartus/sopc_builder/bin/europa -I D:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/software/altera/15.1/quartus/sopc_builder/bin -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ft232h_avalon_sys_dma_ram --dir=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0002_dma_ram_gen/ --quartus_dir=D:/software/altera/15.1/quartus --verilog --config=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0002_dma_ram_gen//ft232h_avalon_sys_dma_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: dma_ram: Done RTL generation for module 'ft232h_avalon_sys_dma_ram'
+Info: dma_ram: "ft232h_avalon_sys" instantiated altera_avalon_onchip_memory2 "dma_ram"
+Info: ft232: "ft232h_avalon_sys" instantiated ft232_avalon "ft232"
+Info: jtag: "ft232h_avalon_sys" instantiated altera_jtag_avalon_master "jtag"
+Info: pll: "ft232h_avalon_sys" instantiated altera_pll "pll"
+Info: ram: Starting RTL generation for module 'ft232h_avalon_sys_ram'
+Info: ram:   Generation command is [exec D:/software/altera/15.1/quartus/bin64/perl/bin/perl.exe -I D:/software/altera/15.1/quartus/bin64/perl/lib -I D:/software/altera/15.1/quartus/sopc_builder/bin/europa -I D:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/software/altera/15.1/quartus/sopc_builder/bin -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=ft232h_avalon_sys_ram --dir=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0005_ram_gen/ --quartus_dir=D:/software/altera/15.1/quartus --verilog --config=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0005_ram_gen//ft232h_avalon_sys_ram_component_configuration.pl  --do_build_sim=0  ]
+Info: ram: Done RTL generation for module 'ft232h_avalon_sys_ram'
+Info: ram: "ft232h_avalon_sys" instantiated altera_avalon_onchip_memory2 "ram"
+Info: reset: "ft232h_avalon_sys" instantiated altera_reset_controller "reset"
+Info: sysid: "ft232h_avalon_sys" instantiated altera_avalon_sysid_qsys "sysid"
+Info: usb_dma: softresetEnable = 1
+Info: usb_dma: Starting RTL generation for module 'ft232h_avalon_sys_usb_dma'
+Info: usb_dma:   Generation command is [exec D:/software/altera/15.1/quartus/bin64//perl/bin/perl.exe -I D:/software/altera/15.1/quartus/bin64//perl/lib -I D:/software/altera/15.1/quartus/sopc_builder/bin/europa -I D:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/software/altera/15.1/quartus/sopc_builder/bin -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/common -I D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma -- D:/software/altera/15.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_dma/generate_rtl.pl --name=ft232h_avalon_sys_usb_dma --dir=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0008_usb_dma_gen/ --quartus_dir=D:/software/altera/15.1/quartus --verilog --config=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0008_usb_dma_gen//ft232h_avalon_sys_usb_dma_component_configuration.pl  --do_build_sim=0  ]
+Info: usb_dma: # 2016.12.05 22:22:22 (*)   ft232h_avalon_sys_usb_dma: allowing these transactions: word, hw, byte_access
+Info: usb_dma: Done RTL generation for module 'ft232h_avalon_sys_usb_dma'
+Info: usb_dma: "ft232h_avalon_sys" instantiated altera_avalon_dma "usb_dma"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_0: "ft232h_avalon_sys" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: mm_interconnect_1: "ft232h_avalon_sys" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: mm_interconnect_2: "ft232h_avalon_sys" instantiated altera_mm_interconnect "mm_interconnect_2"
+Info: mm_interconnect_3: "ft232h_avalon_sys" instantiated altera_mm_interconnect "mm_interconnect_3"
+Info: irq_mapper: "ft232h_avalon_sys" instantiated altera_irq_mapper "irq_mapper"
+Info: cpu: Starting RTL generation for module 'ft232h_avalon_sys_cpu_cpu'
+Info: cpu:   Generation command is [exec D:/software/altera/15.1/quartus/bin64//eperlcmd.exe -I D:/software/altera/15.1/quartus/bin64//perl/lib -I D:/software/altera/15.1/quartus/sopc_builder/bin/europa -I D:/software/altera/15.1/quartus/sopc_builder/bin/perl_lib -I D:/software/altera/15.1/quartus/sopc_builder/bin -I D:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I D:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I D:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I D:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- D:/software/altera/15.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.epl --name=ft232h_avalon_sys_cpu_cpu --dir=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0010_cpu_gen/ --quartus_bindir=D:/software/altera/15.1/quartus/bin64/ --verilog --config=C:/Users/xd/AppData/Local/Temp/alt7140_5826688747751065710.dir/0010_cpu_gen//ft232h_avalon_sys_cpu_cpu_processor_configuration.pl  --do_build_sim=0  ]
+Info: cpu: # 2016.12.05 22:22:29 (*) Starting Nios II generation
+Info: cpu: # 2016.12.05 22:22:29 (*)   Checking for plaintext license.
+Info: cpu: # 2016.12.05 22:22:32 (*)   Plaintext license not found.
+Info: cpu: # 2016.12.05 22:22:32 (*)   Checking for encrypted license (non-evaluation).
+Info: cpu: # 2016.12.05 22:22:34 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: cpu: # 2016.12.05 22:22:34 (*)   Elaborating CPU configuration settings
+Info: cpu: # 2016.12.05 22:22:34 (*)   Creating all objects for CPU
+Info: cpu: # 2016.12.05 22:22:34 (*)     Testbench
+Info: cpu: # 2016.12.05 22:22:35 (*)     Instruction decoding
+Info: cpu: # 2016.12.05 22:22:35 (*)       Instruction fields
+Info: cpu: # 2016.12.05 22:22:35 (*)       Instruction decodes
+Info: cpu: # 2016.12.05 22:22:36 (*)       Signals for RTL simulation waveforms
+Info: cpu: # 2016.12.05 22:22:36 (*)       Instruction controls
+Info: cpu: # 2016.12.05 22:22:36 (*)     Pipeline frontend
+Info: cpu: # 2016.12.05 22:22:36 (*)     Pipeline backend
+Info: cpu: # 2016.12.05 22:22:40 (*)   Generating RTL from CPU objects
+Info: cpu: # 2016.12.05 22:22:44 (*)   Creating encrypted RTL
+Info: cpu: # 2016.12.05 22:22:45 (*) Done Nios II generation
+Info: cpu: Done RTL generation for module 'ft232h_avalon_sys_cpu_cpu'
+Info: cpu: "cpu" instantiated altera_nios2_gen2_unit "cpu"
+Info: pll0: "ddr3" instantiated altera_mem_if_ddr3_pll "pll0"
+Info: p0: Generating clock pair generator
+Info: p0: Generating ft232h_avalon_sys_ddr3_p0_altdqdqs
+Info: p0: 
+Info: p0: *****************************
+Info: p0: 
+Info: p0: Remember to run the ft232h_avalon_sys_ddr3_p0_pin_assignments.tcl
+Info: p0: script after running Synthesis and before Fitting.
+Info: p0: 
+Info: p0: *****************************
+Info: p0: 
+Info: p0: "ddr3" instantiated altera_mem_if_ddr3_hard_phy_core "p0"
+Info: s0: Generating Qsys sequencer system
+Info: s0: QSYS sequencer system generated successfully
+Info: s0: "ddr3" instantiated altera_mem_if_ddr3_qseq "s0"
+Info: c0: "ddr3" instantiated altera_mem_if_ddr3_hard_memory_controller "c0"
+Info: oct0: "ddr3" instantiated altera_mem_if_oct "oct0"
+Info: dll0: "ddr3" instantiated altera_mem_if_dll "dll0"
+Info: mm_interconnect_1: "ddr3" instantiated altera_mm_interconnect "mm_interconnect_1"
+Info: jtag_phy_embedded_in_jtag_master: "jtag" instantiated altera_jtag_dc_streaming "jtag_phy_embedded_in_jtag_master"
+Info: timing_adt: "jtag" instantiated timing_adapter "timing_adt"
+Info: fifo: "jtag" instantiated altera_avalon_sc_fifo "fifo"
+Info: b2p: "jtag" instantiated altera_avalon_st_bytes_to_packets "b2p"
+Info: p2b: "jtag" instantiated altera_avalon_st_packets_to_bytes "p2b"
+Info: transacto: "jtag" instantiated altera_avalon_packets_to_master "transacto"
+Info: b2p_adapter: "jtag" instantiated channel_adapter "b2p_adapter"
+Info: p2b_adapter: "jtag" instantiated channel_adapter "p2b_adapter"
+Info: cpu_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "cpu_data_master_translator"
+Info: usb_dma_control_port_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "usb_dma_control_port_slave_translator"
+Info: cpu_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "cpu_data_master_agent"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_master_agent.sv
+Info: usb_dma_control_port_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "usb_dma_control_port_slave_agent"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_slave_agent.sv
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: router_006: "mm_interconnect_0" instantiated altera_merlin_router "router_006"
+Info: router_008: "mm_interconnect_0" instantiated altera_merlin_router "router_008"
+Info: cpu_data_master_limiter: "mm_interconnect_0" instantiated altera_merlin_traffic_limiter "cpu_data_master_limiter"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_traffic_limiter.sv
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_reorder_memory.sv
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_avalon_sc_fifo.v
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: ram_s1_burst_adapter: "mm_interconnect_0" instantiated altera_merlin_burst_adapter "ram_s1_burst_adapter"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_avalon_st_pipeline_stage.sv
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: cmd_demux_002: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_002"
+Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_003: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_003"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: cmd_mux_005: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_005"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux_003: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_003"
+Info: rsp_demux_005: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_005"
+Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_mux_002: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_002"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: ram_s1_rsp_width_adapter: "mm_interconnect_0" instantiated altera_merlin_width_adapter "ram_s1_rsp_width_adapter"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: avalon_st_adapter_005: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter_005"
+Info: router: "mm_interconnect_1" instantiated altera_merlin_router "router"
+Info: router_002: "mm_interconnect_1" instantiated altera_merlin_router "router_002"
+Info: cmd_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: cmd_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_demux: "mm_interconnect_1" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: rsp_mux: "mm_interconnect_1" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: crosser: "mm_interconnect_1" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_avalon_st_clock_crosser.v
+Info: Reusing file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_avalon_st_pipeline_base.v
+Warning: Overwriting different file D:/project/ft232h-core/ft232h_avalon/ft232h_avalon_sys/synthesis/submodules/altera_std_synchronizer_nocut.v
+Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: error_adapter_0: "avalon_st_adapter_005" instantiated error_adapter "error_adapter_0"
+Info: ft232h_avalon_sys: Done "ft232h_avalon_sys" with 68 modules, 171 files
+Info: qsys-generate succeeded.
+Info: Finished: Create HDL design files for synthesis

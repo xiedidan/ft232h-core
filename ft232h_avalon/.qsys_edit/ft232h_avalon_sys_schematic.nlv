@@ -1,0 +1,70 @@
+# # File gsaved with Nlview version 6.3.8  2013-12-19 bk=1.2992 VDI=34 GEI=35
+# 
+preplace inst ft232h_avalon_sys.ddr3.dmaster.timing_adt -pg 1
+preplace inst ft232h_avalon_sys.sys_clk -pg 1 -lvl 1 -y 610
+preplace inst ft232h_avalon_sys.ddr3_clk -pg 1 -lvl 4 -y 230
+preplace inst ft232h_avalon_sys.ddr3.dll0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.c0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.afi_reset -pg 1
+preplace inst ft232h_avalon_sys.ddr3.global_reset -pg 1
+preplace inst ft232h_avalon_sys.cpu -pg 1 -lvl 1 -y 380
+preplace inst ft232h_avalon_sys.ddr3.dmaster.p2b_adapter -pg 1
+preplace inst ft232h_avalon_sys.ddr3.dmaster.clk_src -pg 1
+preplace inst ft232h_avalon_sys.ddr3.dmaster -pg 1
+preplace inst ft232h_avalon_sys.reset -pg 1 -lvl 2 -y 610
+preplace inst ft232h_avalon_sys.ddr3.dmaster.b2p -pg 1
+preplace inst ft232h_avalon_sys -pg 1 -lvl 1 -y 40 -regy -20
+preplace inst ft232h_avalon_sys.pll -pg 1 -lvl 3 -y 590
+preplace inst ft232h_avalon_sys.ddr3.dmaster.transacto -pg 1
+preplace inst ft232h_avalon_sys.ddr3.dmaster.p2b -pg 1
+preplace inst ft232h_avalon_sys.ddr3.pll0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.afi_half_clk -pg 1
+preplace inst ft232h_avalon_sys.cpu.cpu -pg 1
+preplace inst ft232h_avalon_sys.cpu.reset_bridge -pg 1
+preplace inst ft232h_avalon_sys.cpu.clock_bridge -pg 1
+preplace inst ft232h_avalon_sys.usb_dma -pg 1 -lvl 4 -y 450
+preplace inst ft232h_avalon_sys.sysid -pg 1 -lvl 5 -y 770
+preplace inst ft232h_avalon_sys.ddr3.pll_bridge -pg 1
+preplace inst ft232h_avalon_sys.ddr3.mp_cmd_reset_n_0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.dmaster.fifo -pg 1
+preplace inst ft232h_avalon_sys.ddr3.dmaster.jtag_phy_embedded_in_jtag_master -pg 1
+preplace inst ft232h_avalon_sys.ddr3.s0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.mp_cmd_clk_0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.p0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.pll_ref_clk -pg 1
+preplace inst ft232h_avalon_sys.ddr3 -pg 1 -lvl 5 -y 70
+preplace inst ft232h_avalon_sys.ft232 -pg 1 -lvl 5 -y 450
+preplace inst ft232h_avalon_sys.ddr3.dmaster.clk_rst -pg 1
+preplace inst ft232h_avalon_sys.ddr3.afi_clk -pg 1
+preplace inst ft232h_avalon_sys.ram -pg 1 -lvl 5 -y 690
+preplace inst ft232h_avalon_sys.ddr3.dmaster.b2p_adapter -pg 1
+preplace inst ft232h_avalon_sys.ddr3.as0 -pg 1
+preplace inst ft232h_avalon_sys.ddr3.afi_reset_export -pg 1
+preplace inst ft232h_avalon_sys.ddr3.soft_reset -pg 1
+preplace inst ft232h_avalon_sys.dma_ram -pg 1 -lvl 5 -y 590
+preplace inst ft232h_avalon_sys.dma -pg 1 -lvl 4 -y 610
+preplace inst ft232h_avalon_sys.ddr3.oct0 -pg 1
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232h_avalon_sys.clk_0,(SLAVE)ddr3_clk.clk_in) 1 0 4 NJ 240 NJ 240 NJ 240 NJ
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(SLAVE)pll.reset,(MASTER)reset.reset_out,(SLAVE)ram.reset1,(SLAVE)ddr3_clk.clk_in_reset,(SLAVE)dma.reset,(SLAVE)usb_dma.reset,(SLAVE)cpu.reset,(SLAVE)sysid.reset,(SLAVE)ft232.reset,(SLAVE)dma_ram.reset1) 1 0 5 160 580 NJ 580 810 580 1010 720 1400
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ram.clk1,(SLAVE)dma_ram.clk1,(SLAVE)dma.clk,(SLAVE)cpu.clk,(SLAVE)usb_dma.clk,(MASTER)pll.outclk0,(SLAVE)sysid.clk,(SLAVE)ft232.clock) 1 0 5 140 540 NJ 500 NJ 500 970 740 1420
+preplace netloc FAN_IN<net_container>ft232h_avalon_sys</net_container>(SLAVE)ddr3.avl_0,(MASTER)usb_dma.read_master,(MASTER)dma.write_master) 1 4 1 1340
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ddr3.status,(SLAVE)ft232h_avalon_sys.ddr3_status) 1 0 5 NJ 320 NJ 320 NJ 320 NJ 320 NJ
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232h_avalon_sys.reset,(SLAVE)sys_clk.clk_in_reset) 1 0 1 NJ
+preplace netloc POINT_TO_POINT<net_container>ft232h_avalon_sys</net_container>(SLAVE)reset.reset_in1,(MASTER)cpu.debug_reset_request) 1 1 1 600
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232h_avalon_sys.ft232_usb,(SLAVE)ft232.usb) 1 0 5 NJ 560 NJ 560 NJ 560 NJ 560 NJ
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ddr3.soft_reset,(MASTER)ddr3_clk.clk_reset,(SLAVE)ddr3.global_reset) 1 4 1 1300
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(SLAVE)usb_dma.irq,(SLAVE)dma.irq,(SLAVE)ft232.rx_irq,(MASTER)cpu.irq,(SLAVE)ft232.tx_irq) 1 1 4 580 540 NJ 540 1030 580 1380
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232h_avalon_sys.memory,(SLAVE)ddr3.memory) 1 0 5 NJ 120 NJ 120 NJ 120 NJ 120 NJ
+preplace netloc POINT_TO_POINT<net_container>ft232h_avalon_sys</net_container>(SLAVE)dma_ram.s2,(MASTER)dma.read_master) 1 4 1 1360
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232h_avalon_sys.oct,(SLAVE)ddr3.oct) 1 0 5 NJ 340 NJ 340 NJ 340 NJ 340 NJ
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ddr3.pll_sharing,(SLAVE)ft232h_avalon_sys.ddr3_pll_sharing) 1 0 5 NJ 300 NJ 300 NJ 300 NJ 300 NJ
+preplace netloc POINT_TO_POINT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232.avalon,(MASTER)usb_dma.write_master) 1 4 1 1380
+preplace netloc POINT_TO_POINT<net_container>ft232h_avalon_sys</net_container>(MASTER)sys_clk.clk_reset,(SLAVE)reset.reset_in0) 1 1 1 N
+preplace netloc POINT_TO_POINT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ddr3.pll_ref_clk,(MASTER)ddr3_clk.clk) 1 4 1 1380
+preplace netloc EXPORT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ft232h_avalon_sys.clk,(SLAVE)sys_clk.clk_in) 1 0 1 NJ
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(SLAVE)ddr3.mp_wfifo_reset_n_0,(SLAVE)ddr3.mp_rfifo_reset_n_0,(MASTER)ddr3.afi_reset,(SLAVE)ddr3.mp_cmd_reset_n_0) 1 4 2 1420 390 1730
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(MASTER)sys_clk.clk,(SLAVE)pll.refclk,(SLAVE)reset.clk) 1 1 2 620 600 N
+preplace netloc FAN_OUT<net_container>ft232h_avalon_sys</net_container>(MASTER)ddr3.afi_clk,(SLAVE)ddr3.mp_wfifo_clk_0,(SLAVE)ddr3.mp_rfifo_clk_0,(SLAVE)ddr3.mp_cmd_clk_0) 1 4 2 1380 30 1730
+preplace netloc INTERCONNECT<net_container>ft232h_avalon_sys</net_container>(SLAVE)usb_dma.control_port_slave,(SLAVE)cpu.debug_mem_slave,(SLAVE)sysid.control_slave,(MASTER)cpu.instruction_master,(MASTER)cpu.data_master,(SLAVE)ram.s1,(SLAVE)dma.control_port_slave,(SLAVE)dma_ram.s1) 1 0 5 180 520 540 520 NJ 520 990 600 1380
+levelinfo -pg 1 0 110 1770
+levelinfo -hier ft232h_avalon_sys 120 300 650 840 1060 1550 1750
