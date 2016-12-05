@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at ft232h.v(28): object "CLEAR_IRQ" differs only in case from object "clear_irq" in the same scope File: D:/project/ft232h-core/ft232h_fifo/ft232h/ft232h.v Line: 28
+Info (10281): Verilog HDL Declaration information at ft232h.v(29): object "CONTROL" differs only in case from object "control" in the same scope File: D:/project/ft232h-core/ft232h_fifo/ft232h/ft232h.v Line: 29

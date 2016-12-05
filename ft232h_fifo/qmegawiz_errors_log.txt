@@ -1,0 +1,41 @@
+
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:11:08>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:11:23>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:11:28>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:11:44>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:12:11>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:12:30>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:13:09>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
+
+D:/project/ft232h-core/ft232h_fifo/fifo.v
+
+Nov 28 09PM:13:18>: File D:/project/ft232h-core/ft232h_fifo/fifo.v does not exist.
+Do you want to create the file?
